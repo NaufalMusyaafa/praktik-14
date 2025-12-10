@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-size: 3.5rem;
+  margin: 0;
+  color: #242424;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #646cff;
+  margin-top: 0.5rem;
+}
+
+.content {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.about, .contact {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.about h2, .contact h2 {
+  margin-top: 0;
+  color: #646cff;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1rem;
+  color: #888;
+}
+
+@media (prefers-color-scheme: dark) {
+  .landing-page {
+    background: linear-gradient(135deg, #242424 0%, #1a1a1a 100%);
+    color: white;
+  }
+
+  .name {
+    color: white;
+  }
+
+  .about, .contact {
+    background: #333;
+  }
+
+  .about h2, .contact h2 {
+    color: #535bf2;
+  }
+
+  .footer {
+    color: #aaa;
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .content {
+    padding: 0 1rem;
+  }
+}
